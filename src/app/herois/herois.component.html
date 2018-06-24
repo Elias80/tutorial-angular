@@ -1,0 +1,15 @@
+
+<h2>{{ heroi.nome | uppercase }} detales</h2>
+<div><span>id: </span>{{heroi.id}}</div>
+<div>
+    <label>nome:
+            <input [(ngModel)]="heroi.nome" placeholder="nome">
+    </label>
+</div>
+
+<h2> Meus Herois</h2>
+<ul class= "herois">
+    <li
+        *ngfor="let heroi of herois">
+    </li>
+</ul>
