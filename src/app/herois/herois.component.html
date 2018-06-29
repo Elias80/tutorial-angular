@@ -9,7 +9,7 @@
 
 <h2> Meus Herois</h2>
 <ul class= "herois">
-    <li
-        *ngFor="let heroi2 of herois">
+    <li *ngFor="let heroi2 of herois">
+        <span class="badge">{{heroi2.id}}</span> {{heroi2.nome}}
     </li>
 </ul>
